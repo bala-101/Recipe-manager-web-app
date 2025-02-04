@@ -3,8 +3,12 @@ package com.example.recipe.model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+
 import jakarta.persistence.Id;
+
 import jakarta.persistence.Table;
+
+
 import lombok.Data;
 
 @Entity
@@ -15,7 +19,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String username;
+    private  String  username;
 
-    private String password; // Ensure this is hashed before saving to the database
+    private  String  password   ; 
 }
